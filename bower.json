@@ -1,16 +1,25 @@
 {
-  "name": "webapps-scientific-calculator",
-  "version": "1.1.0",
+  "name": "Calculator",
+  "description": "Calculator: a scientific calculator",
+  "main": "app/calc.js",
+  "authors": [
+    "Todd Brandt <todd.e.brandt@intel.com>"
+  ],
+  "license": "APL 2.0",
+  "homepage": "https://github.com/davidmaxwaterman/webapps-scientific-calculator",
   "ignore": [
     "**/.*",
     "node_modules",
-    "components"
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
   ],
   "dependencies": {
-    "iscroll": "~5.0.0",
-    "q": "~0.9.3",
-    "appframework": "01org/appframework#~2.0.0",
-    "peg-0.7.0.min": "http://cloud.github.com/downloads/dmajda/pegjs/peg-0.7.0.min.js",
-    "open-sans": "http://www.fontsquirrel.com/fonts/download/open-sans"
+    "iscroll": "^5.2.0",
+    "q": "#v1",
+    "appframework": "01org/appframework#^2.1.1",
+    "pegjs": "^0.10.0",
+    "open-sans": "*"
   }
 }

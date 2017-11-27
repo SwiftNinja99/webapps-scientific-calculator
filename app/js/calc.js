@@ -813,11 +813,11 @@ $(function() {
 
             var lazyScripts = [
                 {
-                    script: "lib/peg-0.7.0.min/index.js",
+                    script: "lib/pegjs/peg-0.10.0.min.js",
                     success: function(resolve) {
                         $.get("js/peg-code.txt",function(data) {
                             try {
-                                Calculator.parser = PEG.buildParser(data);
+                                Calculator.parser = peg.generate(data);
                                 resolve();
                             } catch(err) {
                                 console.log(err.message);
@@ -860,7 +860,7 @@ $(function() {
                     }
                 },
                 {
-                    script: "lib/iscroll/dist/iscroll-min.js",
+                    script: "lib/iscroll/build/iscroll.js",
                     success: function(resolve) {
                         Calculator.createScrollbars();
                         resolve();

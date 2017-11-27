@@ -1,17 +1,14 @@
 {
   "name": "Calculator",
-  "version": "2.0",
+  "short_name": "Calc",
+  "start_url": "/app/index.html",
+  "version": "3.0",
   "default_locale": "en_US",
   "description": "A scientific calculator",
+  "display": "fullscreen",
+  "theme_color": "#3f51b5",
+  "background_color": "#3f51b5",
   "icons": {
     "128": "scientific-calculator-icon_128.png"
-  },
-  "app": {
-    "launch": {
-        "local_path": "index.html"
-    }
-  },
-  "manifest_version": 2,
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; style-src 'self' 'unsafe-inline'"
+  }
 }
-
